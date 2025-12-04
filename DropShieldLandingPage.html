@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Shield ATS | Proactive Candidate Drop-Off Mitigation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light off-white background */
+        }
+        .text-drop-blue { color: #1e40af; } /* A strong blue for branding */
+        .bg-drop-blue { background-color: #1e40af; }
+        .hover-drop-blue:hover { background-color: #1c3980; }
+        .border-drop-blue { border-color: #1e40af; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-drop-blue">
+                Drop Shield <span class="text-gray-500 font-medium text-lg">ATS</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#features" class="hover:text-drop-blue transition duration-150">Features</a>
+                <a href="#benefits" class="hover:text-drop-blue transition duration-150">Benefits</a>
+                <a href="#algorithm" class="hover:text-drop-blue transition duration-150">Algorithm</a>
+                <a href="#contact" class="px-4 py-2 bg-drop-blue text-white rounded-lg shadow-lg hover-drop-blue transition duration-150">Request Demo</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <!-- Simple hamburger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="bg-gray-50 py-20 sm:py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-3 py-1 text-sm font-semibold bg-drop-blue bg-opacity-10 text-drop-blue rounded-full mb-4">
+                The Next Generation ATS
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight mb-6">
+                Protect Your Talent Pipeline with <span class="text-drop-blue">Drop Shield</span>
+            </h1>
+            <p class="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                Stop losing top candidates to slow processes. Drop Shield is the only ATS with a proprietary algorithm designed to proactively identify and engage candidates at risk of **dropping off**.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-drop-blue hover-drop-blue transition duration-150">
+                    See It In Action
+                </a>
+                <a href="#algorithm" class="w-full sm:w-auto px-8 py-3 border border-gray-300 text-base font-medium rounded-lg shadow-md text-gray-700 bg-white hover:bg-gray-100 transition duration-150">
+                    Learn About the Algorithm
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Core Modules/Features -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">
+                Engineered for Speed, Compliance, and Conversion
+            </h2>
+            <p class="text-xl text-gray-500 text-center max-w-3xl mx-auto mb-16">
+                Drop Shield streamlines every stage of the candidate journey from application to seamless HRIS transfer.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Feature 1: Real-Time Communication (UPDATED) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-drop-blue mb-4">
+                        <!-- Icon: Chat bubble -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 4v-4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Instant Candidate Chat (via Firestore)</h3>
+                    <p class="text-gray-600 text-sm">
+                        Mandatory Real-Time Chat Broker, powered by a Real-Time Database (like Firestore), syncs recruiter and candidate chat instantly, ensuring **documented and timely responses** across all devices.
+                    </p>
+                </div>
+
+                <!-- Feature 2: HRIS Integration (NEW FEATURE CARD) -->
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-drop-blue mb-4">
+                        <!-- Icon: Seamless Integration -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">No-Lag HRIS Conversion</h3>
+                    <p class="text-gray-600 text-sm">
+                        Seamless, API-level integration with **Core Vantage HR** that instantly converts the Candidate Profile to a New Hire Profile upon offer acceptance. **Moving from hire to retire is effortless.**
+                    </p>
+                </div>
+                
+                <!-- Feature 3: HM Empowerment (UPDATED) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-drop-blue mb-4">
+                        <!-- Icon: Dashboard / Mobile -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile-First Stakeholder Experience</h3>
+                    <p class="text-gray-600 text-sm">
+                        Dedicated Mobile App Experience for Hiring Managers (HMs) provides a single, actionable view of tasks for feedback and approval, **accelerating cycle time** without requiring full ATS training.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Compliance & Audit (UPDATED) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-drop-blue mb-4">
+                        <!-- Icon: Shield / Lock -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.599 4.04A12.003 12.003 0 003 12c0 2.921 1.03 5.617 2.768 7.766M21 12c0 2.921-1.03 5.617-2.768 7.766M12 15h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Predictive Compliance & Encryption</h3>
+                    <p class="text-gray-600 text-sm">
+                        Automatically records and timestamps every decision point for a **court-ready DOLE audit trail**. All PII, financial terms, and uploaded documents are secured with **AES-256 encryption at rest**.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The Proprietary Drop Shield Algorithm -->
+    <section id="algorithm" class="py-20 bg-drop-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold mb-4">
+                        Introducing the Proactive "Drop Shield" Algorithm
+                    </h2>
+                    <p class="text-xl opacity-90 mb-6">
+                        This is the core differentiator. Our proprietary algorithm consumes real-time data to identify disengaged candidates *before* they withdraw, allowing for immediate, targeted intervention.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span class="opacity-95 font-medium">Real-Time Risk Score:</span> Calculates drop-off likelihood (Low, Medium, High) based on time-to-completion, chat inactivity, and content engagement.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6a2 2 0 00-2-2H5a2 2 0 00-2 2v13M17 17v-6a2 2 0 00-2-2h-2a2 2 0 00-2 2v6"></path></svg>
+                            <span class="opacity-95 font-medium">Sentiment Analysis & Drop Zones:</span> Analyzes candidate communication mood and promptness in chat, triggering intensified engagement protocols when a candidate enters a high-risk **"Drop Zone"** stage.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="opacity-95 font-medium">Automated Engagement Prompts:</span> Drafts suggested, personalized chat messages directly in the ATS interface for the recruiter to approve and send via the mobile app.
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0 text-center">
+                    <!-- Placeholder graphic for the algorithm risk monitor -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl inline-block">
+                        <div class="w-full max-w-sm mx-auto p-4 bg-gray-100 rounded-lg">
+                            <p class="text-xl font-bold text-gray-800 mb-2">Candidate Risk Monitor</p>
+                            <div class="h-40 flex flex-col justify-around">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">Engagement Score</span>
+                                    <div class="w-1/2 bg-green-200 rounded-full h-2.5">
+                                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">Time-to-Completion</span>
+                                    <div class="w-1/2 bg-yellow-200 rounded-full h-2.5">
+                                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600 font-bold">Drop-Off Likelihood</span>
+                                    <span class="text-lg font-extrabold text-red-600 bg-red-100 px-3 py-1 rounded-full">MEDIUM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Client Benefits (Metrics) -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-16">
+                Quantifiable Results for HR Leaders
+            </h2>
+
+            <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Metric 1: Time-to-Hire (UPDATED to reference Smart Scheduling) -->
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-drop-blue mb-2">25%<span class="text-xl ml-2 text-gray-400">FASTER</span></div>
+                    <p class="text-xl font-semibold text-gray-900">Reduced Time-to-Hire</p>
+                    <p class="text-gray-500 mt-1">Eliminate scheduling friction with **Smart Scheduling** and automated Mobile-First approvals from HMs.</p>
+                </div>
+                <!-- Metric 2: Compliance/Audit (UPDATED to reference GDPR/CCPA) -->
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-drop-blue mb-2">100%<span class="text-xl ml-2 text-gray-400">AUTOMATED</span></div>
+                    <p class="text-xl font-semibold text-gray-900">Compliance & Data Archiving</p>
+                    <p class="text-gray-500 mt-1">Guaranteed Predictive Compliance and automated data archiving built for **GDPR/CCPA** global privacy regulations.</p>
+                </div>
+                <!-- Metric 3: TRCA -->
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-drop-blue mb-2">TRCA<span class="text-xl ml-2 text-gray-400">INSIGHTS</span></div>
+                    <p class="text-xl font-semibold text-gray-900">Total Recruitment Cost Analytics</p>
+                    <p class="text-gray-500 mt-1">Advanced reporting module for real-time cost-per-hire and budget transparency based on source, recruiter, and stage.</p>
+                </div>
+                <!-- Metric 4: CXS -->
+                <div class="text-center">
+                    <div class="text-6xl font-extrabold text-drop-blue mb-2">CXS<span class="text-xl ml-2 text-gray-400">SCORING</span></div>
+                    <p class="text-xl font-semibold text-gray-900">Candidate Experience Scoring</p>
+                    <p class="text-gray-500 mt-1">Unique, quantifiable score generated from in-app activity and feedback loops for continuous quality improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Call to Action (CTA) -->
+    <section id="contact" class="py-16 bg-drop-blue bg-opacity-95">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                Stop Chasing. Start Shielding.
+            </h2>
+            <p class="text-xl opacity-90 mb-8">
+                Ready to transform your hiring funnel? Request a personalized demo to see how Drop Shield will proactively protect your best candidates.
+            </p>
+            <form action="#" method="POST" class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <input type="email" placeholder="Your Work Email" class="px-6 py-3 text-lg rounded-lg border-none text-gray-800 focus:ring-4 focus:ring-white focus:outline-none w-full sm:w-80 shadow-inner" required>
+                <button type="submit" class="px-6 py-3 text-lg font-bold rounded-lg bg-white text-drop-blue shadow-xl hover:bg-gray-200 transition duration-150 transform hover:scale-105">
+                    Request Drop Shield Demo
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="sm:flex sm:justify-between sm:items-center">
+                <div class="text-lg font-bold mb-4 sm:mb-0">
+                    Drop Shield ATS
+                </div>
+                <div class="text-sm space-x-6">
+                    <a href="#" class="hover:text-drop-blue transition duration-150">Privacy Policy</a>
+                    <a href="#" class="hover:text-drop-blue transition duration-150">Terms of Service</a>
+                </div>
+            </div>
+            <p class="mt-6 text-xs text-gray-400">
+                &copy; 2025 Drop Shield ATS. All rights reserved. Built with a focus on Candidate Conversion & Compliance.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
